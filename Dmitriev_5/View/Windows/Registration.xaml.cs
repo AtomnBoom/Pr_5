@@ -48,7 +48,7 @@ namespace Dmitriev_5.View.Windows
                             Password = PasswordPb.Password,
                             CompanyName = CompanyNameTb.Text
                         };
-                        //App.context.Add(customer);
+                        App.context.Customers.Add(customer);
                         App.context.SaveChanges();
 
                         Authorization authorization = new Authorization();
