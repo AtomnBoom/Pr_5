@@ -22,12 +22,12 @@
 
         <TextBlock Text="АВТОРИЗАЦИЯ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" />
 
-        <TextBlock Grid.Row="2" Text="Логин:" FontSize="16" VerticalAlignment="Bottom" />
-        <TextBox Name="LoginTb" Grid.Row="3" FontSize="18" />
+        <TextBlock Grid.Row="2" Text="Логин:" FontSize="16" VerticalAlignment="Bottom"/>
+        <TextBox Name="LoginTb" Grid.Row="3" FontSize="24"/>
 
 
         <TextBlock Grid.Row="5" Text="Пароль:" FontSize="16" VerticalAlignment="Bottom" />
-        <PasswordBox Name="PasswordPb" Grid.Row="6" FontSize="18" />
+        <PasswordBox Name="PasswordPb" Grid.Row="6" FontSize="24" />
 
         <Button Name="AuthBtn" Grid.Row="8" Height="40" Width="150" Content="Войти" FontSize="18" Background="Blue" BorderThickness="0" Foreground="White" VerticalAlignment="Bottom" Click="AuthBtn_Click"/>
         
