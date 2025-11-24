@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a023aac26b84eb88376e66d06efa1ae" Name="Diagram1">
+        <EntityTypeShape EntityType="Dmitriev_5Model.Customers" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dmitriev_5Model.Equipment" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dmitriev_5Model.EquipmentCategories" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dmitriev_5Model.OrderItems" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dmitriev_5Model.Orders" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dmitriev_5Model.Suppliers" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Dmitriev_5Model.FK__Orders__Customer__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="Dmitriev_5Model.FK__Equipment__Categ__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="Dmitriev_5Model.FK__Equipment__Suppl__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="Dmitriev_5Model.FK__OrderItem__Equip__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="Dmitriev_5Model.FK__OrderItem__Order__4BAC3F29" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
