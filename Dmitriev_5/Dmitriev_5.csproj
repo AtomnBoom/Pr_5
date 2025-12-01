@@ -102,8 +102,14 @@
     <Compile Include="View\Windows\Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Windows\Eqpment.xaml.cs">
+      <DependentUpon>Eqpment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Windows\MainW.xaml.cs">
       <DependentUpon>MainW.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\Order.xaml.cs">
+      <DependentUpon>Order.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\Profil.xaml.cs">
       <DependentUpon>Profil.xaml</DependentUpon>
@@ -159,7 +165,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Windows\Eqpment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\MainW.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\Order.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
