@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dmitriev_5.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace Dmitriev_5.View.Windows
     /// </summary>
     public partial class MainW : Window
     {
+
         public MainW()
         {
             InitializeComponent();
@@ -40,6 +42,5 @@ namespace Dmitriev_5.View.Windows
             profil.Show();
             Close();
         }
-
     }
 }

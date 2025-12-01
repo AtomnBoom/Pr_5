@@ -32,8 +32,8 @@
                 <Button Name="QuitBtn" Content="Выйти" Foreground="White" Background="Transparent" BorderThickness="0" FontSize="32" Click="QuitBtn_Click"  HorizontalAlignment="Center" Width="180" Height="80" FontWeight="Bold"/>
             </Border>
         </StackPanel>
-        
-        <ListView Grid.Row="1" Grid.Column="1" Name="ListV" FontSize="20">
+
+        <ListView Grid.Row="1" Grid.Column="1" Name="ListV" FontSize="20" SelectionChanged="ListV_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Дата заказа" DisplayMemberBinding="{Binding OrderDate, StringFormat=dd.MM.yyyy}"/>

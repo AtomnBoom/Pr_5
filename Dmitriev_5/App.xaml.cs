@@ -14,7 +14,8 @@ namespace Dmitriev_5
     /// </summary>
     public partial class App : Application
     {
-        public static Customers curentUser = new Customers();
         public static Dmitriev_5Entities context = new Dmitriev_5Entities();
+        public static Customers curentUser { get; set; }
+        public static Equipment currentOrder { get; set; }
     }
 }
