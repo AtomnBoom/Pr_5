@@ -15,6 +15,8 @@ namespace Dmitriev_5
     public partial class App : Application
     {
         public static Dmitriev_5Entities context = new Dmitriev_5Entities();
-        public static Customers curentUser = new Customers();
+        public static Customers curentUser {  get; set; }
+        public static Orders curentOrder {  get; set; }
+        public static Equipment curentEquipment {  get; set; }
     }
 }

@@ -39,7 +39,7 @@ namespace Dmitriev_5.View.Windows
                 var user =  App.context.Customers.FirstOrDefault(u => u.Login == LoginTb.Text && u.Password == PasswordPb.Password);
                 if (user != null)
                 {
-                    App.curentUser = user;
+                   App.curentUser = user;
                     MainW main = new MainW();
                     main.Show();
                     Close();

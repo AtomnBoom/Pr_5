@@ -42,5 +42,17 @@ namespace Dmitriev_5.View.Windows
             profil.Show();
             Close();
         }
+
+        private void ListV_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ListV.SelectedItem != null)
+            {
+                var selectedItem = ListV.SelectedItem as Orders;
+                App.curentOrder = selectedItem;
+
+                Order order = new Order();
+                order.ShowDialog();
+            }
+        }
     }
 }

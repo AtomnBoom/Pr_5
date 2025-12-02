@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dmitriev_5.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +24,24 @@ namespace Dmitriev_5.View.Windows
         {
             InitializeComponent();
 
-            ListV.ItemsSource = App.context.Equipment.ToList();
+            ListV.ItemsSource = App.context.OrderItems.Where(i => i.OrderItemID == App.curentOrder.OrderID).ToList();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void ListV_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ListV.SelectedItem != null)
+            {
+                var selectedItem = ListV.SelectedItem as Equipment;
+                App.curentEquipment = selectedItem;
+
+                Eqpment eqpment = new Eqpment();
+                eqpment.ShowDialog();
+            }
         }
     }
 }

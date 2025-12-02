@@ -33,7 +33,7 @@
             </Border>
         </StackPanel>
 
-        <ListView Grid.Row="1" Grid.Column="1" Name="ListV" FontSize="20">
+        <ListView Grid.Row="1" Grid.Column="1" Name="ListV" FontSize="20" SelectionChanged="ListV_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Дата заказа" DisplayMemberBinding="{Binding OrderDate, StringFormat=dd.MM.yyyy}"/>

@@ -15,7 +15,7 @@
 
         <TextBlock Text="Заказ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold"/>
 
-        <ListView Name="ListV" Grid.Row="1" >
+        <ListView Name="ListV" Grid.Row="1" SelectionChanged="ListV_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding OrderID}"/>
