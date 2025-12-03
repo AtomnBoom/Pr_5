@@ -36,7 +36,8 @@ namespace Dmitriev_5.View.Windows
         {
             if (ListV.SelectedItem != null)
             {
-                var selectedItem = ListV.SelectedItem as Equipment;
+
+                var selectedItem = ListV.SelectedItem as OrderItems;
                 App.curentEquipment = selectedItem;
 
                 Eqpment eqpment = new Eqpment();

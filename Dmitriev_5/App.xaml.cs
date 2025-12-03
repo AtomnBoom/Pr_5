@@ -17,6 +17,6 @@ namespace Dmitriev_5
         public static Dmitriev_5Entities context = new Dmitriev_5Entities();
         public static Customers curentUser {  get; set; }
         public static Orders curentOrder {  get; set; }
-        public static Equipment curentEquipment {  get; set; }
+        public static OrderItems curentEquipment {  get; set; }
     }
 }

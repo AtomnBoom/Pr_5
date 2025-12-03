@@ -15,16 +15,14 @@
 
         <TextBlock Text="Заказ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold"/>
 
-        <ListView Name="ListV" Grid.Row="1" SelectionChanged="ListV_SelectionChanged">
+        <ListView Name="ListV" Grid.Row="1" FontSize="24" SelectionChanged="ListV_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding OrderID}"/>
-                    <GridViewColumn Header="Заказчик" DisplayMemberBinding="{Binding Customers.Name}"/>
-                    <GridViewColumn Header="Дата" DisplayMemberBinding="{Binding OrderDate}"/>
-                    <GridViewColumn Header="Стоимость" DisplayMemberBinding="{Binding TotalAmount}"/>
-                    <GridViewColumn Header="Статус заказа" DisplayMemberBinding="{Binding Status}"/>
-                    <GridViewColumn Header="Адресс" DisplayMemberBinding="{Binding DeliveryAddress}"/>
-                    <GridViewColumn Header="Примичание" DisplayMemberBinding="{Binding Notes}"/>
+                    <GridViewColumn Header="Модель" DisplayMemberBinding="{Binding Equipment.Model}"/>
+                    <GridViewColumn Header="Изготовитель" DisplayMemberBinding="{Binding Equipment.Manufacturer}"/>
+                    <GridViewColumn Header="Кол-во" DisplayMemberBinding="{Binding Quantity}"/>
+                    <GridViewColumn Header="Стоимость ед" DisplayMemberBinding="{Binding UnitPrice}"/>
                 </GridView>
             </ListView.View>
         </ListView>

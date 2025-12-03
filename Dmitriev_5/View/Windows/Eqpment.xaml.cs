@@ -24,17 +24,17 @@ namespace Dmitriev_5.View.Windows
         {
             InitializeComponent();
             IDTbl.Text = App.curentEquipment.EquipmentID.ToString();
-            ModelTbl.Text = App.curentEquipment.Model.ToString();
-            ManufacturerTbl.Text = App.curentEquipment.Manufacturer.ToString();
-            CategoryTbl.Text = App.curentEquipment.EquipmentCategories.CategoryName.ToString();
-            SupplierTbl.Text = App.curentEquipment.Suppliers.Name.ToString();
-            PriceTbl.Text = App.curentEquipment.Price.ToString();
-            WeightTbl.Text = App.curentEquipment.Weight.ToString();
-            DimensionsTbl.Text = App.curentEquipment.Dimensions.ToString();
-            PowerConsumptionTbl.Text = App.curentEquipment.PowerConsumption.ToString();
-            MaxPrintSpeedTbl.Text = App.curentEquipment.MaxPrintSpeed.ToString();
-            MaxPrintFormatTbl.Text = App.curentEquipment.MaxPrintFormat.ToString();
-            TechnologyTbl.Text = App.curentEquipment.Technology.ToString();
+            ModelTbl.Text = App.curentEquipment.Equipment.Model.ToString();
+            ManufacturerTbl.Text = App.curentEquipment.Equipment.Manufacturer.ToString();
+            CategoryTbl.Text = App.curentEquipment.Equipment.EquipmentCategories.CategoryName.ToString();
+            SupplierTbl.Text = App.curentEquipment.Equipment.Suppliers.Name.ToString();
+            PriceTbl.Text = App.curentEquipment.Equipment.Price.ToString();
+            WeightTbl.Text = App.curentEquipment.Equipment.Weight.ToString();
+            DimensionsTbl.Text = App.curentEquipment.Equipment.Dimensions.ToString();
+            PowerConsumptionTbl.Text = App.curentEquipment.Equipment.PowerConsumption.ToString();
+            MaxPrintSpeedTbl.Text = App.curentEquipment.Equipment.MaxPrintSpeed.ToString();
+            MaxPrintFormatTbl.Text = App.curentEquipment.Equipment.MaxPrintFormat.ToString();
+            TechnologyTbl.Text = App.curentEquipment.Equipment.Technology.ToString();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
